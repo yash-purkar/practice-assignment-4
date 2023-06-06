@@ -1,0 +1,19 @@
+.flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.align-center {
+  align-items: center;
+}
+button {
+  cursor: pointer;
+}
+
+.direction-column {
+  flex-direction: column;
+}

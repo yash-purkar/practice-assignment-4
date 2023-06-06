@@ -1,0 +1,7 @@
+.logout-btn {
+  padding: 0.8rem;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
