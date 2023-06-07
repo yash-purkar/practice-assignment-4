@@ -23,10 +23,14 @@ export const SingleProduct = ({ product }) => {
     }
   }
 
+  const handleProductClick = (id) => {
+    navigate(`/product/${id}`)
+  }
+
   return (
     <div key={product._id} className="product-card">
 
-      <img src={image} alt={itemName} className='product-image' />
+      <img src={image} alt={itemName} className='product-image' onClick={() => handleProductClick(_id)} />
       <div className='flex justify-between'>
         <p>{itemName}</p>
         <p>Size : <strong>{size}</strong></p>

@@ -16,6 +16,7 @@ import { Profile } from "./Pages/Profile/Profile";
 import { SignUp } from "./Pages/SignUp/SignUp";
 import { Checkout } from "./Pages/Checkout/Checkout";
 import { OrderSummay } from "./Pages/OrderSummay/OrderSummay";
+import { ProductDetail } from "./Pages/ProductDetail/ProductDetail";
 
 function App() {
   const { loading } = UseData();
@@ -33,6 +34,7 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/orderSummary" element={<OrderSummay />} />
+        <Route path="/product/:productId" element={<ProductDetail />} />
         <Route />
       </Routes>
       <ToastContainer
